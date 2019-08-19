@@ -6,8 +6,11 @@ from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath):
-    #load messages and categories dataset and then merge them into on dataframe by column”id”
-    
+    """
+    #load messages and categories dataset and then merge them into on dataframe by column”id”    
+    messages_filepath: it's messages dataset file path
+    categories_filepath: it's categories dataset file path
+    """
     #load messages dataset from csv file
     messages_dataset = pd.read_csv(messages_filepath)
     
